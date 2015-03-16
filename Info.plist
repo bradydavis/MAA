@@ -15,7 +15,7 @@
 	<key>CFBundleIcons~ipad</key>
 	<dict/>
 	<key>CFBundleIdentifier</key>
-	<string>${BUNDLE_IDENTIFIER}</string>
+	<string>$(BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -35,7 +35,7 @@
 			<string>Icon@2x</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb231265150320768</string>
+				<string>fb38524515699</string>
 			</array>
 		</dict>
 		<dict>
@@ -62,15 +62,15 @@
 	<key>CFBundleVersion</key>
 	<string>${APP_VERSION}</string>
 	<key>FacebookAppID</key>
-	<string>231265150320768</string>
+	<string>38524515699</string>
 	<key>FacebookDisplayName</key>
-	<string>Anypic</string>
+	<string>Mullets Across America</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.photography</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSHumanReadableCopyright</key>
-	<string>© 2014 Parse, Inc.</string>
+	<string>© 2014 Brady Davis</string>
 	<key>UIApplicationExitsOnSuspend</key>
 	<false/>
 	<key>UIBackgroundModes</key>
@@ -98,7 +98,7 @@
 				<key>Blue</key>
 				<real>0.117841511964798</real>
 				<key>Green</key>
-				<real>0.15368592739105219</real>
+				<real>0.1536859273910522</real>
 				<key>Red</key>
 				<real>0.2008436918258667</real>
 			</dict>

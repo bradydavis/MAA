@@ -11,4 +11,4 @@
 
 CODE_SIGN_IDENTITY = 
 CODE_SIGN_IDENTITY[sdk=iphoneos*] = iPhone Developer
-BUNDLE_IDENTIFIER = com.parse.Anypic
+BUNDLE_IDENTIFIER = com.mulletsacrossamerica.mulletsacrossamerica
