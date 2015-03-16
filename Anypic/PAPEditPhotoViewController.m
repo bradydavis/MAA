@@ -9,6 +9,7 @@
 #import "PAPEditPhotoViewController.h"
 #import "PAPPhotoDetailsFooterView.h"
 #import "UIImage+ResizeAdditions.h"
+#import "CoreLocation/CoreLocation.h"
 
 @interface PAPEditPhotoViewController ()
 @property (nonatomic, strong) UIScrollView *scrollView;
@@ -30,6 +31,8 @@
 @synthesize photoPostBackgroundTaskId;
 
 #pragma mark - NSObject
+
+
 
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
@@ -197,16 +200,17 @@
     [photo setObject:[PFUser currentUser] forKey:kPAPPhotoUserKey];
     [photo setObject:self.photoFile forKey:kPAPPhotoPictureKey];
     [photo setObject:self.thumbnailFile forKey:kPAPPhotoThumbnailKey];
-    
-   [PFGeoPoint geoPointForCurrentLocationInBackground:^(PFGeoPoint *geoPoint, NSError *error) {
-        if (!error) {
-            PFGeoPoint *location = [PFGeoPoint geoPointWithLatitude:geoPoint.latitude
-                                                       longitude:geoPoint.longitude];
-            photo[@"location"] = location;
-            
-        }
-   }];
-    
+
+    // get users location
+    [PFGeoPoint geoPointForCurrentLocationInBackground:^(PFGeoPoint *coords, NSError *error) {
+          if (!error) {
+              NSLog(@"User is currently at %f, %f", coords.latitude, coords.longitude);
+              photo[@"location"] = coords;
+              [photo saveInBackground];
+
+                 }
+             }];
+
     
     // photos are public, but may only be modified by the user who uploaded them
     PFACL *photoACL = [PFACL ACLWithUser:[PFUser currentUser]];
