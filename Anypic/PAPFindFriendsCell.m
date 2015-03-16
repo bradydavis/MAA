@@ -79,7 +79,7 @@
                            forState:UIControlStateNormal];
         [self.followButton setTitle:@"Following"
                            forState:UIControlStateSelected];
-        [self.followButton setTitleColor:[UIColor colorWithRed:254.0f/255.0f green:149.0f/255.0f blue:50.0f/255.0f alpha:1.0f]
+        [self.followButton setTitleColor:[UIColor colorWithRed:27.0f/255.0f green:130.0f/255.0f blue:245.0f/255.0f alpha:1.0]
                                 forState:UIControlStateNormal];
         [self.followButton setTitleColor:[UIColor whiteColor]
                                 forState:UIControlStateSelected];

@@ -307,7 +307,7 @@ static TTTTimeIntervalFormatter *timeFormatter;
     likeButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [likeButton setFrame:CGRectMake(likeButtonX, likeButtonY, likeButtonDim, likeButtonDim)];
     [likeButton setBackgroundColor:[UIColor clearColor]];
-    [likeButton setTitleColor:[UIColor colorWithRed:254.0f/255.0f green:149.0f/255.0f blue:50.0f/255.0f alpha:1.0f] forState:UIControlStateNormal];
+    [likeButton setTitleColor:[UIColor colorWithRed:27.0f/255.0f green:130.0f/255.0f blue:245.0f/255.0f alpha:1.0] forState:UIControlStateNormal];
     [likeButton setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
     [likeButton setTitleEdgeInsets:UIEdgeInsetsMake(0.0f, 0.0f, 0.0f, 0.0f)];
     [[likeButton titleLabel] setFont:[UIFont systemFontOfSize:12.0f]];

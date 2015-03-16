@@ -63,7 +63,7 @@
             [self.commentButton setFrame:CGRectMake( 282.0f, 10.0f, 29.0f, 29.0f)];
             [self.commentButton setBackgroundColor:[UIColor clearColor]];
             [self.commentButton setTitle:@"" forState:UIControlStateNormal];
-            [self.commentButton setTitleColor:[UIColor colorWithRed:254.0f/255.0f green:149.0f/255.0f blue:50.0f/255.0f alpha:1.0f] forState:UIControlStateNormal];
+            [self.commentButton setTitleColor:[UIColor colorWithRed:27.0f/255.0f green:130.0f/255.0f blue:245.0f/255.0f alpha:1.0] forState:UIControlStateNormal];
             [self.commentButton setTitleEdgeInsets:UIEdgeInsetsMake( -6.0f, 0.0f, 0.0f, 0.0f)];
             [[self.commentButton titleLabel] setFont:[UIFont systemFontOfSize:12.0f]];
             [[self.commentButton titleLabel] setMinimumScaleFactor:0.8f];
@@ -79,7 +79,7 @@
             [self.likeButton setFrame:CGRectMake(246.0f, 9.0f, 29.0f, 29.0f)];
             [self.likeButton setBackgroundColor:[UIColor clearColor]];
             [self.likeButton setTitle:@"" forState:UIControlStateNormal];
-            [self.likeButton setTitleColor:[UIColor colorWithRed:254.0f/255.0f green:149.0f/255.0f blue:50.0f/255.0f alpha:1.0f] forState:UIControlStateNormal];
+            [self.likeButton setTitleColor:[UIColor colorWithRed:27.0f/255.0f green:130.0f/255.0f blue:245.0f/255.0f alpha:1.0] forState:UIControlStateNormal];
             [self.likeButton setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
             [self.likeButton setTitleEdgeInsets:UIEdgeInsetsMake(0.0f, 0.0f, 0.0f, 0.0f)];
             [[self.likeButton titleLabel] setFont:[UIFont systemFontOfSize:12.0f]];

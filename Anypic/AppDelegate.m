@@ -247,7 +247,7 @@
 - (void)setupAppearance {
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
 
-    [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:254.0f/255.0f green:149.0f/255.0f blue:50.0f/255.0f alpha:1.0f]];
+    [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:27.0f/255.0f green:130.0f/255.0f blue:245.0f/255.0f alpha:1.0]];
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.0f/255.0f green:0.0f/255.0f blue:0.0f/255.0f alpha:1.0f]];
   
     [[UINavigationBar appearance] setTitleTextAttributes:@{
@@ -255,15 +255,15 @@
                                 }];
 
     [[UIButton appearanceWhenContainedIn:[UINavigationBar class], nil]
-     setTitleColor:[UIColor colorWithRed:254.0f/255.0f green:149.0f/255.0f blue:50.0f/255.0f alpha:1.0f]
+     setTitleColor:[UIColor colorWithRed:27.0f/255.0f green:130.0f/255.0f blue:245.0f/255.0f alpha:1.0]
      forState:UIControlStateNormal];
     
     [[UIBarButtonItem appearance] setTitleTextAttributes:@{
-                                NSForegroundColorAttributeName:[UIColor colorWithRed:254.0f/255.0f green:149.0f/255.0f blue:50.0f/255.0f alpha:1.0f]
+                                NSForegroundColorAttributeName:[UIColor colorWithRed:27.0f/255.0f green:130.0f/255.0f blue:245.0f/255.0f alpha:1.0]
                                 }
                                 forState:UIControlStateNormal];
     
-    [[UISearchBar appearance] setTintColor:[UIColor colorWithRed:254.0f/255.0f green:149.0f/255.0f blue:50.0f/255.0f alpha:1.0f]];
+    [[UISearchBar appearance] setTintColor:[UIColor colorWithRed:27.0f/255.0f green:130.0f/255.0f blue:245.0f/255.0f alpha:1.0]];
 }
 
 - (void)monitorReachability {
