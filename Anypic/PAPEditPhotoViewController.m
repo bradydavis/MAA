@@ -198,6 +198,16 @@
     [photo setObject:self.photoFile forKey:kPAPPhotoPictureKey];
     [photo setObject:self.thumbnailFile forKey:kPAPPhotoThumbnailKey];
     
+   [PFGeoPoint geoPointForCurrentLocationInBackground:^(PFGeoPoint *geoPoint, NSError *error) {
+        if (!error) {
+            PFGeoPoint *location = [PFGeoPoint geoPointWithLatitude:geoPoint.latitude
+                                                       longitude:geoPoint.longitude];
+            photo[@"location"] = location;
+            
+        }
+   }];
+    
+    
     // photos are public, but may only be modified by the user who uploaded them
     PFACL *photoACL = [PFACL ACLWithUser:[PFUser currentUser]];
     [photoACL setPublicReadAccess:YES];
