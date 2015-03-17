@@ -11,6 +11,7 @@
 #import "Reachability.h"
 #import "MBProgressHUD.h"
 #import "PAPHomeViewController.h"
+#import "PAPMapViewController.h"
 #import "PAPLogInViewController.h"
 #import "UIImage+ResizeAdditions.h"
 #import "PAPAccountViewController.h"
@@ -23,6 +24,7 @@
 }
 
 @property (nonatomic, strong) PAPHomeViewController *homeViewController;
+@property (nonatomic, strong) PAPMapViewController *mapViewController;
 @property (nonatomic, strong) PAPActivityFeedViewController *activityViewController;
 @property (nonatomic, strong) PAPWelcomeViewController *welcomeViewController;
 
@@ -179,9 +181,11 @@
     self.tabBarController = [[PAPTabBarController alloc] init];
     self.homeViewController = [[PAPHomeViewController alloc] initWithStyle:UITableViewStylePlain];
     [self.homeViewController setFirstLaunch:firstLaunch];
+    self.mapViewController = [[PAPMapViewController alloc] init];
     self.activityViewController = [[PAPActivityFeedViewController alloc] initWithStyle:UITableViewStylePlain];
     
     UINavigationController *homeNavigationController = [[UINavigationController alloc] initWithRootViewController:self.homeViewController];
+    UINavigationController *mapNavigationController = [[UINavigationController alloc] initWithRootViewController:self.mapViewController];
     UINavigationController *emptyNavigationController = [[UINavigationController alloc] init];
     UINavigationController *activityFeedNavigationController = [[UINavigationController alloc] initWithRootViewController:self.activityViewController];
     
@@ -189,15 +193,22 @@
     [homeTabBarItem setTitleTextAttributes: @{ NSForegroundColorAttributeName: [UIColor whiteColor], NSFontAttributeName: [UIFont boldSystemFontOfSize:13] } forState:UIControlStateSelected];
     [homeTabBarItem setTitleTextAttributes: @{ NSForegroundColorAttributeName: [UIColor colorWithRed:114.0f/255.0f green:114.0f/255.0f blue:114.0f/255.0f alpha:1.0f], NSFontAttributeName: [UIFont boldSystemFontOfSize:13] } forState:UIControlStateNormal];
     
+    UITabBarItem *mapTabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"Map", @"Map") image:[[UIImage imageNamed:@"IconMap.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"IconMapSelected.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    [mapTabBarItem setTitleTextAttributes: @{ NSForegroundColorAttributeName: [UIColor whiteColor], NSFontAttributeName: [UIFont boldSystemFontOfSize:13] } forState:UIControlStateSelected];
+    [mapTabBarItem setTitleTextAttributes: @{ NSForegroundColorAttributeName: [UIColor colorWithRed:114.0f/255.0f green:114.0f/255.0f blue:114.0f/255.0f alpha:1.0f], NSFontAttributeName: [UIFont boldSystemFontOfSize:13] } forState:UIControlStateNormal];
+    
+    
     UITabBarItem *activityFeedTabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"Activity", @"Activity") image:[[UIImage imageNamed:@"IconTimeline.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"IconTimelineSelected.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     [activityFeedTabBarItem setTitleTextAttributes:@{ NSForegroundColorAttributeName: [UIColor whiteColor], NSFontAttributeName: [UIFont boldSystemFontOfSize:13] } forState:UIControlStateSelected];
     [activityFeedTabBarItem setTitleTextAttributes:@{ NSForegroundColorAttributeName: [UIColor colorWithRed:114.0f/255.0f green:114.0f/255.0f blue:114.0f/255.0f alpha:1.0f], NSFontAttributeName: [UIFont boldSystemFontOfSize:13] } forState:UIControlStateNormal];
     
     [homeNavigationController setTabBarItem:homeTabBarItem];
+  // Cant figure this shit out
+    //[mapNavigationController setTabBarItem:mapTabBarItem];
     [activityFeedNavigationController setTabBarItem:activityFeedTabBarItem];
     
     self.tabBarController.delegate = self;
-    self.tabBarController.viewControllers = @[ homeNavigationController, emptyNavigationController, activityFeedNavigationController];
+    self.tabBarController.viewControllers = @[ homeNavigationController, mapNavigationController, emptyNavigationController, activityFeedNavigationController];
     
     [self.navController setViewControllers:@[ self.welcomeViewController, self.tabBarController ] animated:NO];
 

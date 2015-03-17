@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		092354B313A1D7EB00DA740F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092354B213A1D7EB00DA740F /* CFNetwork.framework */; };
+		092354B313A1D7EB00DA740F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092354B213A1D7EB00DA740F /* CFNetwork.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		092354B513A1D7F000DA740F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092354B413A1D7F000DA740F /* SystemConfiguration.framework */; };
 		092354B713A1D83C00DA740F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092354B613A1D83C00DA740F /* MobileCoreServices.framework */; };
 		095ACE8613C68EA300566243 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095ACE8513C68EA300566243 /* AudioToolbox.framework */; };
 		099CCEAD13F9E3760039A464 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 099CCEAC13F9E3760039A464 /* libz.1.1.3.dylib */; };
 		09ABC07213A1D52D009C3FCF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09ABC07113A1D52D009C3FCF /* UIKit.framework */; };
-		09ABC07413A1D52D009C3FCF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09ABC07313A1D52D009C3FCF /* Foundation.framework */; };
 		09ABC07613A1D52D009C3FCF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09ABC07513A1D52D009C3FCF /* CoreGraphics.framework */; };
 		09BEF34C13D51C3F001BBCDB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BEF34B13D51C3F001BBCDB /* Security.framework */; };
 		2FCDD6B014A573F500295AAC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCDD6AF14A573F500295AAC /* QuartzCore.framework */; };
@@ -137,6 +136,10 @@
 		C4F102E2156C58440061BC3E /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4F102DF156C58440061BC3E /* Entitlements.plist */; };
 		C4F102E7156C58570061BC3E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C4F102E5156C58570061BC3E /* InfoPlist.strings */; };
 		C4F102EF156C58E00061BC3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F102EC156C58E00061BC3E /* main.m */; };
+		C7BA3EB91AB88381009D9B78 /* PAPMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7BA3EB81AB88381009D9B78 /* PAPMapViewController.m */; };
+		C7BA3EBC1AB89C2E009D9B78 /* iconMap.png in Resources */ = {isa = PBXBuildFile; fileRef = C7BA3EBA1AB89C2E009D9B78 /* iconMap.png */; };
+		C7BA3EBD1AB89C2E009D9B78 /* iconMap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7BA3EBB1AB89C2E009D9B78 /* iconMap@2x.png */; };
+		C7DB6A271AB880B10098CD1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09ABC07313A1D52D009C3FCF /* Foundation.framework */; };
 		E71D17E51A2E95470099D2C8 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E71D17E41A2E95470099D2C8 /* libstdc++.6.dylib */; };
 		E734204719019BFD00821150 /* AvatarPlaceholderBig.png in Resources */ = {isa = PBXBuildFile; fileRef = E734204519019BFD00821150 /* AvatarPlaceholderBig.png */; };
 		E734204819019BFD00821150 /* AvatarPlaceholderBig@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E734204619019BFD00821150 /* AvatarPlaceholderBig@2x.png */; };
@@ -316,6 +319,10 @@
 		C4F102EB156C58E00061BC3E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		C4F102EC156C58E00061BC3E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
 		C4F102ED156C58E00061BC3E /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = SOURCE_ROOT; };
+		C7BA3EB71AB88381009D9B78 /* PAPMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PAPMapViewController.h; path = Anypic/PAPMapViewController.h; sourceTree = SOURCE_ROOT; };
+		C7BA3EB81AB88381009D9B78 /* PAPMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PAPMapViewController.m; path = Anypic/PAPMapViewController.m; sourceTree = SOURCE_ROOT; };
+		C7BA3EBA1AB89C2E009D9B78 /* iconMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconMap.png; sourceTree = "<group>"; };
+		C7BA3EBB1AB89C2E009D9B78 /* iconMap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconMap@2x.png"; sourceTree = "<group>"; };
 		E71D17E41A2E95470099D2C8 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
 		E72AA8321A3536D1001A3313 /* Anypic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Anypic.entitlements; path = Anypic/Anypic.entitlements; sourceTree = SOURCE_ROOT; };
 		E734204519019BFD00821150 /* AvatarPlaceholderBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AvatarPlaceholderBig.png; sourceTree = "<group>"; };
@@ -339,6 +346,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7DB6A271AB880B10098CD1C /* Foundation.framework in Frameworks */,
 				E71D17E51A2E95470099D2C8 /* libstdc++.6.dylib in Frameworks */,
 				E7BB90FA177BDBE6000A68F9 /* Accelerate.framework in Frameworks */,
 				C4C9B94816B877AE00BB2862 /* AdSupport.framework in Frameworks */,
@@ -359,7 +367,6 @@
 				092354B313A1D7EB00DA740F /* CFNetwork.framework in Frameworks */,
 				09ABC07613A1D52D009C3FCF /* CoreGraphics.framework in Frameworks */,
 				09ABC07213A1D52D009C3FCF /* UIKit.framework in Frameworks */,
-				09ABC07413A1D52D009C3FCF /* Foundation.framework in Frameworks */,
 				6A8214C1351C3110D3BB7520 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,6 +472,8 @@
 				C463AF8E15BF1DAF007F834E /* AvatarPlaceholder.png */,
 				C463AF8F15BF1DAF007F834E /* AvatarPlaceholder@2x.png */,
 				E734204519019BFD00821150 /* AvatarPlaceholderBig.png */,
+				C7BA3EBA1AB89C2E009D9B78 /* iconMap.png */,
+				C7BA3EBB1AB89C2E009D9B78 /* iconMap@2x.png */,
 				E734204619019BFD00821150 /* AvatarPlaceholderBig@2x.png */,
 				C4BE671D157FC7E200A291C2 /* BackgroundLogin.png */,
 				C4BE671E157FC7E200A291C2 /* BackgroundLogin@2x.png */,
@@ -634,6 +643,7 @@
 		C4A89496155879F600DC57D3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C7BA3EBE1AB8A1CD009D9B78 /* Map */,
 				74A504E51565F17E00CFA4E3 /* Login */,
 				C4A894921558795F00DC57D3 /* Home */,
 				C4A894941558796C00DC57D3 /* Take Photo */,
@@ -708,6 +718,15 @@
 				C42500DE159942410087C4F4 /* Distribution.xcconfig */,
 			);
 			name = Configuration;
+			sourceTree = "<group>";
+		};
+		C7BA3EBE1AB8A1CD009D9B78 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				C7BA3EB71AB88381009D9B78 /* PAPMapViewController.h */,
+				C7BA3EB81AB88381009D9B78 /* PAPMapViewController.m */,
+			);
+			name = Map;
 			sourceTree = "<group>";
 		};
 		E7ADD51917BEA34A00E975E2 /* Categories */ = {
@@ -828,6 +847,7 @@
 				C4BE6796157FC7F700A291C2 /* ButtonImageSettingsSelected@2x.png in Resources */,
 				C4BE6797157FC7F700A291C2 /* ButtonLike.png in Resources */,
 				C4BE6798157FC7F700A291C2 /* ButtonLike@2x.png in Resources */,
+				C7BA3EBD1AB89C2E009D9B78 /* iconMap@2x.png in Resources */,
 				C4BE6799157FC7F700A291C2 /* ButtonLikeSelected.png in Resources */,
 				C4BE679A157FC7F700A291C2 /* ButtonLikeSelected@2x.png in Resources */,
 				C4BE67A1157FC7F700A291C2 /* IconAddComment.png in Resources */,
@@ -841,6 +861,7 @@
 				C4BE67AA157FC7F700A291C2 /* IconHome@2x.png in Resources */,
 				C4BE67AB157FC7F700A291C2 /* IconHomeSelected.png in Resources */,
 				C4BE67AC157FC7F700A291C2 /* IconHomeSelected@2x.png in Resources */,
+				C7BA3EBC1AB89C2E009D9B78 /* iconMap.png in Resources */,
 				C4BE67AD157FC7F700A291C2 /* IconPics.png in Resources */,
 				C4BE67AE157FC7F700A291C2 /* IconPics@2x.png in Resources */,
 				C4BE67AF157FC7F700A291C2 /* IconTick.png in Resources */,
@@ -933,6 +954,7 @@
 				C4F102B9156C57B90061BC3E /* PAPSettingsButtonItem.m in Sources */,
 				C4F102BC156C57CD0061BC3E /* PAPTabBarController.m in Sources */,
 				C4F102C2156C57DA0061BC3E /* PAPLogInViewController.m in Sources */,
+				C7BA3EB91AB88381009D9B78 /* PAPMapViewController.m in Sources */,
 				C4F102C3156C57DA0061BC3E /* PAPWelcomeViewController.m in Sources */,
 				C4F102CB156C57EE0061BC3E /* PAPActivityFeedViewController.m in Sources */,
 				E7ADD51B17BEA36800E975E2 /* UIImage+ResizeAdditions.m in Sources */,
