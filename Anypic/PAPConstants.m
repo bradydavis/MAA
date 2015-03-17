@@ -8,8 +8,8 @@
 
 #import "PAPConstants.h"
 
-NSString *const kPAPUserDefaultsActivityFeedViewControllerLastRefreshKey    = @"com.parse.Anypic.userDefaults.activityFeedViewController.lastRefresh";
-NSString *const kPAPUserDefaultsCacheFacebookFriendsKey                     = @"com.parse.Anypic.userDefaults.cache.facebookFriends";
+NSString *const kPAPUserDefaultsActivityFeedViewControllerLastRefreshKey    = @"com.mulletsacrossamerica.mulletsacrossamerica.userDefaults.activityFeedViewController.lastRefresh";
+NSString *const kPAPUserDefaultsCacheFacebookFriendsKey                     = @"com.mulletsacrossamerica.mulletsacrossamerica.userDefaults.cache.facebookFriends";
 
 
 #pragma mark - Launch URLs
@@ -19,15 +19,15 @@ NSString *const kPAPLaunchURLHostTakePicture = @"camera";
 
 #pragma mark - NSNotification
 
-NSString *const PAPAppDelegateApplicationDidReceiveRemoteNotification           = @"com.parse.Anypic.appDelegate.applicationDidReceiveRemoteNotification";
-NSString *const PAPUtilityUserFollowingChangedNotification                      = @"com.parse.Anypic.utility.userFollowingChanged";
-NSString *const PAPUtilityUserLikedUnlikedPhotoCallbackFinishedNotification     = @"com.parse.Anypic.utility.userLikedUnlikedPhotoCallbackFinished";
-NSString *const PAPUtilityDidFinishProcessingProfilePictureNotification         = @"com.parse.Anypic.utility.didFinishProcessingProfilePictureNotification";
-NSString *const PAPTabBarControllerDidFinishEditingPhotoNotification            = @"com.parse.Anypic.tabBarController.didFinishEditingPhoto";
-NSString *const PAPTabBarControllerDidFinishImageFileUploadNotification         = @"com.parse.Anypic.tabBarController.didFinishImageFileUploadNotification";
-NSString *const PAPPhotoDetailsViewControllerUserDeletedPhotoNotification       = @"com.parse.Anypic.photoDetailsViewController.userDeletedPhoto";
-NSString *const PAPPhotoDetailsViewControllerUserLikedUnlikedPhotoNotification  = @"com.parse.Anypic.photoDetailsViewController.userLikedUnlikedPhotoInDetailsViewNotification";
-NSString *const PAPPhotoDetailsViewControllerUserCommentedOnPhotoNotification   = @"com.parse.Anypic.photoDetailsViewController.userCommentedOnPhotoInDetailsViewNotification";
+NSString *const PAPAppDelegateApplicationDidReceiveRemoteNotification           = @"com.mulletsacrossamerica.mulletsacrossamerica.appDelegate.applicationDidReceiveRemoteNotification";
+NSString *const PAPUtilityUserFollowingChangedNotification                      = @"com.mulletsacrossamerica.mulletsacrossamerica.utility.userFollowingChanged";
+NSString *const PAPUtilityUserLikedUnlikedPhotoCallbackFinishedNotification     = @"com.mulletsacrossamerica.mulletsacrossamerica.utility.userLikedUnlikedPhotoCallbackFinished";
+NSString *const PAPUtilityDidFinishProcessingProfilePictureNotification         = @"com.mulletsacrossamerica.mulletsacrossamerica.utility.didFinishProcessingProfilePictureNotification";
+NSString *const PAPTabBarControllerDidFinishEditingPhotoNotification            = @"com.mulletsacrossamerica.mulletsacrossamerica.tabBarController.didFinishEditingPhoto";
+NSString *const PAPTabBarControllerDidFinishImageFileUploadNotification         = @"com.mulletsacrossamerica.mulletsacrossamerica.tabBarController.didFinishImageFileUploadNotification";
+NSString *const PAPPhotoDetailsViewControllerUserDeletedPhotoNotification       = @"com.mulletsacrossamerica.mulletsacrossamerica.photoDetailsViewController.userDeletedPhoto";
+NSString *const PAPPhotoDetailsViewControllerUserLikedUnlikedPhotoNotification  = @"com.mulletsacrossamerica.mulletsacrossamerica.photoDetailsViewController.userLikedUnlikedPhotoInDetailsViewNotification";
+NSString *const PAPPhotoDetailsViewControllerUserCommentedOnPhotoNotification   = @"com.mulletsacrossamerica.mulletsacrossamerica.photoDetailsViewController.userCommentedOnPhotoInDetailsViewNotification";
 
 
 #pragma mark - User Info Keys

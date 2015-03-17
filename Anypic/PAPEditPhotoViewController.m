@@ -138,7 +138,7 @@
         [[UIApplication sharedApplication] endBackgroundTask:self.fileUploadBackgroundTaskId];
     }];
     
-    NSLog(@"Requested background expiration task with id %lu for Anypic photo upload", (unsigned long)self.fileUploadBackgroundTaskId);
+    NSLog(@"Requested background expiration task with id %lu for MAA photo upload", (unsigned long)self.fileUploadBackgroundTaskId);
     [self.photoFile saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (succeeded) {
             NSLog(@"Photo uploaded successfully");
