@@ -122,7 +122,7 @@
     }
 
     if ([PFUser currentUser]) {
-        if ([self.tabBarController viewControllers].count > PAPActivityTabBarItemIndex) {
+        if ([self.tabBarController viewControllers].count < PAPActivityTabBarItemIndex) {
             UITabBarItem *tabBarItem = [[self.tabBarController.viewControllers objectAtIndex:PAPActivityTabBarItemIndex] tabBarItem];
             
             NSString *currentBadgeValue = tabBarItem.badgeValue;
@@ -193,7 +193,7 @@
     [homeTabBarItem setTitleTextAttributes: @{ NSForegroundColorAttributeName: [UIColor whiteColor], NSFontAttributeName: [UIFont boldSystemFontOfSize:13] } forState:UIControlStateSelected];
     [homeTabBarItem setTitleTextAttributes: @{ NSForegroundColorAttributeName: [UIColor colorWithRed:114.0f/255.0f green:114.0f/255.0f blue:114.0f/255.0f alpha:1.0f], NSFontAttributeName: [UIFont boldSystemFontOfSize:13] } forState:UIControlStateNormal];
     
-    UITabBarItem *mapTabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"Map", @"Map") image:[[UIImage imageNamed:@"IconMap.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"IconMapSelected.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    UITabBarItem *mapTabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"Map", @"Map") image:[[UIImage imageNamed:@"IconHome.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] selectedImage:[[UIImage imageNamed:@"IconMapSelected.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     [mapTabBarItem setTitleTextAttributes: @{ NSForegroundColorAttributeName: [UIColor whiteColor], NSFontAttributeName: [UIFont boldSystemFontOfSize:13] } forState:UIControlStateSelected];
     [mapTabBarItem setTitleTextAttributes: @{ NSForegroundColorAttributeName: [UIColor colorWithRed:114.0f/255.0f green:114.0f/255.0f blue:114.0f/255.0f alpha:1.0f], NSFontAttributeName: [UIFont boldSystemFontOfSize:13] } forState:UIControlStateNormal];
     
@@ -204,7 +204,8 @@
     
     [homeNavigationController setTabBarItem:homeTabBarItem];
   // Cant figure this shit out
-    //[mapNavigationController setTabBarItem:mapTabBarItem];
+    [mapNavigationController setTabBarItem:mapTabBarItem];
+    
     [activityFeedNavigationController setTabBarItem:activityFeedTabBarItem];
     
     self.tabBarController.delegate = self;

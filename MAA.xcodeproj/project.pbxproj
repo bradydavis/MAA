@@ -137,8 +137,10 @@
 		C4F102E7156C58570061BC3E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C4F102E5156C58570061BC3E /* InfoPlist.strings */; };
 		C4F102EF156C58E00061BC3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F102EC156C58E00061BC3E /* main.m */; };
 		C7BA3EB91AB88381009D9B78 /* PAPMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7BA3EB81AB88381009D9B78 /* PAPMapViewController.m */; };
-		C7BA3EBC1AB89C2E009D9B78 /* iconMap.png in Resources */ = {isa = PBXBuildFile; fileRef = C7BA3EBA1AB89C2E009D9B78 /* iconMap.png */; };
-		C7BA3EBD1AB89C2E009D9B78 /* iconMap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7BA3EBB1AB89C2E009D9B78 /* iconMap@2x.png */; };
+		C7BA3EBC1AB89C2E009D9B78 /* IconMap.png in Resources */ = {isa = PBXBuildFile; fileRef = C7BA3EBA1AB89C2E009D9B78 /* IconMap.png */; };
+		C7BA3EBD1AB89C2E009D9B78 /* IconMap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7BA3EBB1AB89C2E009D9B78 /* IconMap@2x.png */; };
+		C7BA3EC11AB8B92B009D9B78 /* IconMapSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = C7BA3EBF1AB8B92B009D9B78 /* IconMapSelected.png */; };
+		C7BA3EC21AB8B92B009D9B78 /* IconMapSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7BA3EC01AB8B92B009D9B78 /* IconMapSelected@2x.png */; };
 		C7DB6A271AB880B10098CD1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09ABC07313A1D52D009C3FCF /* Foundation.framework */; };
 		E71D17E51A2E95470099D2C8 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E71D17E41A2E95470099D2C8 /* libstdc++.6.dylib */; };
 		E734204719019BFD00821150 /* AvatarPlaceholderBig.png in Resources */ = {isa = PBXBuildFile; fileRef = E734204519019BFD00821150 /* AvatarPlaceholderBig.png */; };
@@ -321,8 +323,10 @@
 		C4F102ED156C58E00061BC3E /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = SOURCE_ROOT; };
 		C7BA3EB71AB88381009D9B78 /* PAPMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PAPMapViewController.h; path = Anypic/PAPMapViewController.h; sourceTree = SOURCE_ROOT; };
 		C7BA3EB81AB88381009D9B78 /* PAPMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PAPMapViewController.m; path = Anypic/PAPMapViewController.m; sourceTree = SOURCE_ROOT; };
-		C7BA3EBA1AB89C2E009D9B78 /* iconMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconMap.png; sourceTree = "<group>"; };
-		C7BA3EBB1AB89C2E009D9B78 /* iconMap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconMap@2x.png"; sourceTree = "<group>"; };
+		C7BA3EBA1AB89C2E009D9B78 /* IconMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconMap.png; sourceTree = "<group>"; };
+		C7BA3EBB1AB89C2E009D9B78 /* IconMap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconMap@2x.png"; sourceTree = "<group>"; };
+		C7BA3EBF1AB8B92B009D9B78 /* IconMapSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconMapSelected.png; sourceTree = "<group>"; };
+		C7BA3EC01AB8B92B009D9B78 /* IconMapSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconMapSelected@2x.png"; sourceTree = "<group>"; };
 		E71D17E41A2E95470099D2C8 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
 		E72AA8321A3536D1001A3313 /* Anypic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Anypic.entitlements; path = Anypic/Anypic.entitlements; sourceTree = SOURCE_ROOT; };
 		E734204519019BFD00821150 /* AvatarPlaceholderBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AvatarPlaceholderBig.png; sourceTree = "<group>"; };
@@ -469,11 +473,13 @@
 		7460D3AD1565557A00F755E4 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				C7BA3EBF1AB8B92B009D9B78 /* IconMapSelected.png */,
+				C7BA3EC01AB8B92B009D9B78 /* IconMapSelected@2x.png */,
 				C463AF8E15BF1DAF007F834E /* AvatarPlaceholder.png */,
 				C463AF8F15BF1DAF007F834E /* AvatarPlaceholder@2x.png */,
 				E734204519019BFD00821150 /* AvatarPlaceholderBig.png */,
-				C7BA3EBA1AB89C2E009D9B78 /* iconMap.png */,
-				C7BA3EBB1AB89C2E009D9B78 /* iconMap@2x.png */,
+				C7BA3EBA1AB89C2E009D9B78 /* IconMap.png */,
+				C7BA3EBB1AB89C2E009D9B78 /* IconMap@2x.png */,
 				E734204619019BFD00821150 /* AvatarPlaceholderBig@2x.png */,
 				C4BE671D157FC7E200A291C2 /* BackgroundLogin.png */,
 				C4BE671E157FC7E200A291C2 /* BackgroundLogin@2x.png */,
@@ -811,6 +817,7 @@
 				C4F101F5156C2D800061BC3E /* ActivityFeedBlank@2x.png in Resources */,
 				C4F101F6156C2D800061BC3E /* HomeTimelineBlank.png in Resources */,
 				C4F101F7156C2D800061BC3E /* HomeTimelineBlank@2x.png in Resources */,
+				C7BA3EC11AB8B92B009D9B78 /* IconMapSelected.png in Resources */,
 				C4F101FC156C35EE0061BC3E /* CellLoadMore.png in Resources */,
 				C4F101FD156C35EE0061BC3E /* CellLoadMore@2x.png in Resources */,
 				C4F102E2156C58440061BC3E /* Entitlements.plist in Resources */,
@@ -847,7 +854,7 @@
 				C4BE6796157FC7F700A291C2 /* ButtonImageSettingsSelected@2x.png in Resources */,
 				C4BE6797157FC7F700A291C2 /* ButtonLike.png in Resources */,
 				C4BE6798157FC7F700A291C2 /* ButtonLike@2x.png in Resources */,
-				C7BA3EBD1AB89C2E009D9B78 /* iconMap@2x.png in Resources */,
+				C7BA3EBD1AB89C2E009D9B78 /* IconMap@2x.png in Resources */,
 				C4BE6799157FC7F700A291C2 /* ButtonLikeSelected.png in Resources */,
 				C4BE679A157FC7F700A291C2 /* ButtonLikeSelected@2x.png in Resources */,
 				C4BE67A1157FC7F700A291C2 /* IconAddComment.png in Resources */,
@@ -861,7 +868,7 @@
 				C4BE67AA157FC7F700A291C2 /* IconHome@2x.png in Resources */,
 				C4BE67AB157FC7F700A291C2 /* IconHomeSelected.png in Resources */,
 				C4BE67AC157FC7F700A291C2 /* IconHomeSelected@2x.png in Resources */,
-				C7BA3EBC1AB89C2E009D9B78 /* iconMap.png in Resources */,
+				C7BA3EBC1AB89C2E009D9B78 /* IconMap.png in Resources */,
 				C4BE67AD157FC7F700A291C2 /* IconPics.png in Resources */,
 				C4BE67AE157FC7F700A291C2 /* IconPics@2x.png in Resources */,
 				C4BE67AF157FC7F700A291C2 /* IconTick.png in Resources */,
@@ -871,6 +878,7 @@
 				C4BE67B3157FC7F700A291C2 /* IconTimeline.png in Resources */,
 				C4BE67B4157FC7F700A291C2 /* IconTimeline@2x.png in Resources */,
 				C4BE67B5157FC7F700A291C2 /* IconTimelineSelected.png in Resources */,
+				C7BA3EC21AB8B92B009D9B78 /* IconMapSelected@2x.png in Resources */,
 				C4BE67B6157FC7F700A291C2 /* IconTimelineSelected@2x.png in Resources */,
 				C4BE67B7157FC7F700A291C2 /* LogoNavigationBar.png in Resources */,
 				C4BE67B8157FC7F700A291C2 /* LogoNavigationBar@2x.png in Resources */,

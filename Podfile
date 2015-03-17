@@ -1,6 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-workspace 'Anypic'
+workspace 'Mullets Across America'
 
 pod 'Parse'
 pod 'ParseFacebookUtils'
